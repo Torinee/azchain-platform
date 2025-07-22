@@ -46,7 +46,7 @@ const WhiteHome = () => {
               <img src={getImage('banner-2')} className='theme-bottom-2' />
               <Button
                 size='lg'
-                outline='white'
+                $outline='white'
                 className='theme-button'
                 onClick={goToAzchain}
               >
@@ -66,7 +66,7 @@ const WhiteHome = () => {
               <img src={getImage('banner-2')} className='theme-bottom-2' />
               <Button
                 size='lg'
-                outline='white'
+                $outline='white'
                 className='theme-button'
                 onClick={goToAzchain}
               >
