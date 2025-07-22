@@ -7,85 +7,65 @@ import LanguageIcon from '@/images/LanguageIcon'
 import { useRouter } from 'next/router'
 
 const HeaderContainer = () => {
-    const { t, isMobile, language } = useGlobalContext()
+  const { t, isMobile, language } = useGlobalContext()
 
-    const router = useRouter()
+  const router = useRouter()
 
-    const scrollToElement = (id) => {
-        const element = document.getElementById(id)
-        const offset = 100
-        const elementPosition =
-            element.getBoundingClientRect().top + window.scrollY
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id)
+    const offset = 100
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY
 
-        window.scrollTo({
-            top: elementPosition - offset,
-            behavior: 'smooth'
-        })
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: 'smooth'
+    })
+  }
+
+  const handleChangeLanguage = () => {
+    let pathname = router.asPath
+    if (language === 'vi') {
+      pathname = pathname.replace(/\?lang=vi/g, '')
+    } else {
+      pathname = pathname + '?lang=vi'
     }
+    router.push(pathname)
+  }
 
-    const handleChangeLanguage = () => {
-        let pathname = router.asPath
-        if (language === 'vi') {
-            pathname = pathname.replace(/\?lang=vi/g, '')
-        } else {
-            pathname = pathname + '?lang=vi'
-        }
-        router.push(pathname)
-    }
+  return (
+    <Header.Container>
+      <Container>
+        <Header.Logo>
+          <img src={isMobile ? '/images/icon.png' : '/images/logo-dark.png'} />
+        </Header.Logo>
 
-    return (
-        <Header.Container>
-            <Container>
-                <Header.Logo>
-                    <img
-                        src={
-                            isMobile
-                                ? '/images/icon.png'
-                                : '/images/logo-dark.png'
-                        }
-                    />
-                </Header.Logo>
+        <Header.Right>
+          <Header.Center>
+            <Header.CenterItem onClick={() => scrollToElement('collection')}>
+              {t('Collection')}
+            </Header.CenterItem>
+            <Header.CenterItem onClick={() => scrollToElement('sharedholder')}>
+              {t('ShareHolder NFTs')}
+            </Header.CenterItem>
+            <Header.CenterItem onClick={() => scrollToElement('ecosystem')}>
+              {t('Ecosystem')}
+            </Header.CenterItem>
+          </Header.Center>
 
-                <Header.Right>
-                    <Header.Center>
-                        <Header.CenterItem
-                            onClick={() => scrollToElement('about-us')}
-                        >
-                            {t('About us')}
-                        </Header.CenterItem>
-                        <Header.CenterItem
-                            onClick={() => scrollToElement('roadmap')}
-                        >
-                            {t('Roadmap')}
-                        </Header.CenterItem>
-                        <Header.CenterItem
-                            onClick={() => scrollToElement('collection')}
-                        >
-                            {t('Collection')}
-                        </Header.CenterItem>
-                        <Header.CenterItem
-                            onClick={() => scrollToElement('faq')}
-                        >
-                            FAQ
-                        </Header.CenterItem>
-                    </Header.Center>
+          <Button
+            onClick={() => (window.location.href = 'https://nft.azchain.app/')}
+          >
+            {t('JOIN NOW')}
+          </Button>
 
-                    <Button
-                        onClick={() =>
-                            (window.location.href = 'https://nft.azchain.app/')
-                        }
-                    >
-                        {t('JOIN NOW')}
-                    </Button>
-
-                    <Header.Language onClick={handleChangeLanguage}>
-                        <LanguageIcon color='#171717' />
-                        {language}
-                    </Header.Language>
-                </Header.Right>
-            </Container>
-        </Header.Container>
-    )
+          <Header.Language onClick={handleChangeLanguage}>
+            <LanguageIcon color='#171717' />
+            {language}
+          </Header.Language>
+        </Header.Right>
+      </Container>
+    </Header.Container>
+  )
 }
 
 export default HeaderContainer
