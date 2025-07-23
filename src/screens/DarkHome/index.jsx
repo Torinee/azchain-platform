@@ -35,12 +35,44 @@ const DarkHome = () => {
   }
 
   useEffect(() => {
+    function setSlidesHeight() {
+      if (swiperRef.current) {
+        const slides = swiperRef.current.querySelectorAll('.swiper-slide')
+        if (slides.length === 0) return
+        // Reset height trước khi đo lại
+        slides.forEach((slide) => (slide.style.height = 'auto'))
+        const maxHeight = Math.max(
+          ...Array.from(slides).map((slide) => slide.offsetHeight)
+        )
+        slides.forEach((slide) => (slide.style.height = `${maxHeight}px`))
+      }
+    }
+
+    // Gọi lại khi window resize
+    window.addEventListener('resize', setSlidesHeight)
+
+    // Gọi sau một khoảng delay nhỏ để đảm bảo DOM và ảnh đã render xong
+    const timeout = setTimeout(setSlidesHeight, 300)
+
+    // Nếu có ảnh trong slide, lắng nghe sự kiện load của ảnh
     if (swiperRef.current) {
-      const slides = swiperRef.current.querySelectorAll('.swiper-slide')
-      const maxHeight = Math.max(
-        ...Array.from(slides).map((slide) => slide.offsetHeight)
-      )
-      slides.forEach((slide) => (slide.style.height = `${maxHeight}px`))
+      const images = swiperRef.current.querySelectorAll('img')
+      images.forEach((img) => {
+        img.addEventListener('load', setSlidesHeight)
+      })
+      // Cleanup
+      return () => {
+        window.removeEventListener('resize', setSlidesHeight)
+        clearTimeout(timeout)
+        images.forEach((img) => {
+          img.removeEventListener('load', setSlidesHeight)
+        })
+      }
+    } else {
+      return () => {
+        window.removeEventListener('resize', setSlidesHeight)
+        clearTimeout(timeout)
+      }
     }
   }, [])
 
