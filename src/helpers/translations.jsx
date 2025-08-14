@@ -11,11 +11,11 @@ const translation = {
   'WHITE PAGE': 'TRANG TRẮNG',
   'Introduction to': 'Giới thiệu về',
   'Amidst the global shift toward a digital economy, along with the growingtrend of green and sustainable development. AZChain Platform was created to become a specialized Blockchain platform, pioneering in addressing emerging demands.':
-    'Trước làn sóng chuyển đổi mạnh mẽ của nền kinh tế toàn cầu sang các giải pháp số, cùng với xu hướng phát triển kinh tế xanh và bền vững, AZChain ra đời, trở thành một nền tảng blockchain chuyên biệt, tiên phong trong việc đáp ứng những nhu cầu đổi mới.',
+    'Trước làn sóng chuyển đổi mạnh mẽ của nền kinh tế toàn cầu sang các giải pháp số, cùng với xu hướng phát triển kinh tế xanh và bền vững, AZChain Platform ra đời, trở thành một nền tảng blockchain chuyên biệt, tiên phong trong việc đáp ứng những nhu cầu đổi mới.',
   'AZChain Platform offers secure and transparent Blockchain solutions for managing data and authenticating real-world assets, enabling fast andhighly secure transactions.':
     'AZChain Platform mang đến những giải pháp Blockchain an toàn, minh bạch trong việc quản lý Dữ liệu và mã hóa Tài sản thực, khả năng thực hiện giao dịch nhanh chóng và bảo mật cao.',
   'With a focus on meeting diverse needs in Finance, Commerce, and Governance, that also contributes to the advancement of the digital and green economy.':
-    'Nhằm đáp ứng nhu cầu đa dạng trong lĩnh vực Tài chính, Thương mạivà Quản trị, cũng như góp phần thúc đẩy cả nền Kinh tế số và nền Kinh tế xanh.',
+    'Nhằm đáp ứng nhu cầu đa dạng trong lĩnh vực Tài chính, Thương mại và Quản trị, cũng như góp phần thúc đẩy cả nền Kinh tế số và nền Kinh tế xanh.',
   Transparency: 'Minh bạch',
   'Ensure all transactions and data are verifiable and trustworthy.':
     'Đảm bảo mọi giao dịch và dữ liệu đều có thể được kiểm tra tin cậy.',
@@ -31,6 +31,9 @@ const translation = {
   Speed: 'Tốc độ',
   'Fast transaction and data processing for time-saving & improved user experience.':
     'Tối ưu tốc độ xử lý giao dịch và truyền tải dữ liệu nhanh, tiết kiệm thời gian, nâng cao trải nghiệm thực tế.',
+  'Platform Technology & Payment Blockchain Multi-industry (Super DApp)':
+    'Nền tảng Công nghệ & Thanh toán Blockchain Đa ngành (Super DApp)',
+
   // AZGPay
   'MORDEN BLOCKCHAIN PAYMENT PLATFORM':
     'NỀN TẢNG THANH TOÁN BLOCKCHAIN HIỆN ĐẠI',
@@ -39,7 +42,7 @@ const translation = {
   'Crypto Visa/Mastercard': 'Thẻ Visa/Mastercard Crypto',
   'Staking, NFT, DeFi': 'Staking, NFT, DeFi tiện lợi',
   'Secured by Blockchain': 'Bảo mật với Blockchain',
-  'User-friendly Interface, High Speed': 'Giao diện thân thiện, tốc độ cao',
+  'User-friendly Interface, High Speed': 'Giao diện thân thiện, tốc độ nhanh',
 
   // Benefit
   'Key Advantages of the AZChain Platform': 'Lợi ích AZChain Platform mang đến',
@@ -51,13 +54,13 @@ const translation = {
   'Profits for Investors & Platform Developers':
     'Lợi nhuận cho Nhà đầu tư & Nhà phát triển Nền tảng',
   'Franchise Startup on the Global Digital Platform (120 USDT)':
-    'Doanh nghiệp độc quyền trên Nền tảng Số toàn cầu (120 USDT)',
+    'Doanh nghiệp nhượng quyền trên Nền tảng Số toàn cầu (120 USDT)',
   'Advancement Opportunity': 'Cơ hội phát triển',
   '6.000+ Diverse & Unique Products, with 5% to 40% Commissions & Bonuses':
     '6.000+ Sản phẩm đa dạng & Độc đáo, với 5% đến 40% Hoa hồng & Phần thưởng',
   'AZC ACADEMY: AI, Blockchain, Web3': 'AZC ACADEMY: AI, Blockchain, Web3',
   'Mission to Support Blockchain in Underdeveloped Countries':
-    'Sứ mệnh hỗ trợ Blockchain trong các quốc gia phát triển',
+    'Sứ Mệnh Hỗ Trợ Blockchain cho các Quốc gia chưa phát triển',
 
   // Token
   'The AZChain Platform ecosystem includes various types of tokens serving different purposes within the Blockchain platform and its applications. Below is the main Token:':
@@ -94,7 +97,7 @@ const translation = {
   'International and will be implemented worldwide':
     'Mang tính quốc tế và sẽ được triển khai trên toàn thế giới',
   'Disclaimer: Cryptocurrency may be unregulated in your jurisdiction. The value of cryptocurrencies may go down as well as up. Profits may be subject to capital gains or other taxes applicable in your jurisdiction.':
-    'Khuyến cáo: Tiền điện tử có thể không được quản lý trong khu vực của bạn. Giá trị của tiền điện tử có thể giảm cũng như tăng. Lợi nhuận có thể chịu thuế lãi vốn hoặc các loại thuế khác áp dụng tại khu vực của bạn.',
+    'Khuyến cáo: tiền mã hóa có thể không được quản lý trong khu vực của bạn. Giá trị của tiền mã hóa có thể giảm cũng như tăng. Lợi nhuận có thể chịu thuế lãi vốn hoặc các loại thuế khác áp dụng tại khu vực của bạn.',
   'Buy now': 'Mua ngay',
   'Terms of service': 'Điều khoản dịch vụ',
   'Privacy policy': 'Chính sách bảo mật',

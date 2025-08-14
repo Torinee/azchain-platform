@@ -241,7 +241,7 @@ const DarkHome = () => {
         <Ecosystem.Container id='ecosystem'>
           <Ecosystem.Title>
             <GradientText>{t('Ecosystem')}</GradientText>
-            <span>11+++ Applications</span>
+            <span>11+++ {t('Applications')}</span>
           </Ecosystem.Title>
 
           <img src='/images/dark_home/ecosystem-1.png' />
@@ -319,7 +319,7 @@ const DarkHome = () => {
             <Token.LeftText>
               <p>
                 {t(
-                  '$AZC is the native utility token of the AZChain ecosystem, designed to facilitate secure and efficient transactions within our platform. It plays a central role in maintaining network operations, incentivizing participation, and enabling access to tokenized real-world assets.'
+                  'The AZChain Platform ecosystem includes various types of tokens serving different purposes within the Blockchain platform and its applications. Below is the main Token:'
                 )}
               </p>
               <h1>$AZC (AZChain Platform Token)</h1>
@@ -544,9 +544,9 @@ const DarkHome = () => {
 
         {/* Contract */}
         <Contract.Container id='contract'>
-          <GradientText>{t('SMART CONTRACT')}</GradientText>
+          <GradientText>AZChain Platform</GradientText>
           <Contract.SmallTitle>
-            {t('International and will be implemented worldwide')}
+            Multi Chain - Multi Service - Multi Money
           </Contract.SmallTitle>
 
           <Contract.Banner>
