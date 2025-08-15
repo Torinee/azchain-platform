@@ -88,7 +88,7 @@ const DarkHome = () => {
             </Banner.SmallTitle>
             <Banner.Description>
               {t(
-                'Platform Technology & Payment Blockchain Multi-industry (Super DApp)'
+                'Multi-Industry Blockchain Technology & Payment Platform (Super DApp)'
               )}
             </Banner.Description>
             <Banner.ButtonList>

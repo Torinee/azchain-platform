@@ -31,7 +31,7 @@ const translation = {
   Speed: 'Tốc độ',
   'Fast transaction and data processing for time-saving & improved user experience.':
     'Tối ưu tốc độ xử lý giao dịch và truyền tải dữ liệu nhanh, tiết kiệm thời gian, nâng cao trải nghiệm thực tế.',
-  'Platform Technology & Payment Blockchain Multi-industry (Super DApp)':
+  'Multi-Industry Blockchain Technology & Payment Platform (Super DApp)':
     'Nền tảng Công nghệ & Thanh toán Blockchain Đa ngành (Super DApp)',
 
   // AZGPay
@@ -54,17 +54,17 @@ const translation = {
   'Profits for Investors & Platform Developers':
     'Lợi nhuận cho Nhà đầu tư & Nhà phát triển Nền tảng',
   'Franchise Startup on the Global Digital Platform (120 USDT)':
-    'Doanh nghiệp nhượng quyền trên Nền tảng Số toàn cầu (120 USDT)',
-  'Advancement Opportunity': 'Cơ hội phát triển',
+    'Khởi nghiệp Nhượng quyền Nền tảng số Toàn cầu (120 USDT)',
+  'Advancement Opportunity': 'Cơ hội thăng tiến',
   '6.000+ Diverse & Unique Products, with 5% to 40% Commissions & Bonuses':
-    '6.000+ Sản phẩm đa dạng & Độc đáo, với 5% đến 40% Hoa hồng & Phần thưởng',
+    '6.000+ Sản phẩm Đa dạng, Độc đáo, từ 5 đến 40% & Thưởng',
   'AZC ACADEMY: AI, Blockchain, Web3': 'AZC ACADEMY: AI, Blockchain, Web3',
   'Mission to Support Blockchain in Underdeveloped Countries':
     'Sứ Mệnh Hỗ Trợ Blockchain cho các Quốc gia chưa phát triển',
 
   // Token
   'The AZChain Platform ecosystem includes various types of tokens serving different purposes within the Blockchain platform and its applications. Below is the main Token:':
-    'Hệ sinh thái AZChain Platform có nhiều loại Token phục vụ các mục đích khác nhau trong nền tảng và ứng dụng Blockchain.Dưới đây là Token chính:',
+    'Hệ sinh thái AZChain Platform có nhiều loại Token phục vụ các mục đích khác nhau trong nền tảng và ứng dụng Blockchain. Dưới đây là Token chính:',
   'The native token of AZChain Platform, used to reduce transaction fees, participate inand utilize DeFi protocols.':
     'Token gốc của AZChain Platform, giúp giảm phí giao dịch, tham gia và sử dụng trong các giao thức DeFi.',
   'Purpose:': 'Mục địch:',
